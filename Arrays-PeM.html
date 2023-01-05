@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <title>Arrays two</title>
+</head>
+<body>
+   <h1>Arrays - Propriedades e Metodos</h1>
+   <h6>script 1</h6>
+   <script>
+     var Cidades=["Ceara", "Sao Paulo", "Piaui", "Recife", "Aracaju"];
+     <!-- Verifica a quantidade de elementos do array -->
+     let QuantCidades=Cidades.length;
+     document.write("O array possui " + QuantCidades + " elementos " + "<br/>");
+   </script>
+   
+   <h6>script 2</h6>
+   <script>
+     <!-- Add um novo elemento na ultima posicao do array -->
+     Cidades.push("United States");
+     Cidades.push("Ouro Preto");
+     for(i=0; i<Cidades.length; i++){
+        document.write(Cidades[i] + "<br/>");
+     }
+   </script>
+        
+   <h6>script 3</h6>
+   <script>
+     document.write(Cidades[Cidades.length - 1] + "<br/>");     
+     <!-- Exclui o ultimo elemento do array -->
+     Cidades.pop();
+     document.write(Cidades[Cidades.length - 1] + "<br/>");
+   </script>
+   
+   <h6>script 4</h6>
+   <script>
+     Cidades.push("Maceio");
+     document.write("Antes do deslocamento: <br>");
+     document.write("Tamanho: " + Cidades.length + "</br>");
+     document.write("1 elemento: " + Cidades[0] + "</br></br>");
+     <!-- Apaga o primeiro elemento do array -->
+     Cidades.shift();
+     document.write("Apos o deslocamento: </br>");
+     document.write("Tamanho: " + Cidades.length + "</br>");
+     document.write("1 elemento: " + Cidades[0] + "</br>");
+   </script>
+        
+   <h6>script 7</h6>
+   <script>
+     for(j=0; j<Cidades.length; j++){
+        document.write(Cidades[j] + "</br>");
+     }  
+     <!-- Limpa determinado elemento do array, mais sua posicao continua -->
+     delete Cidades[2] ;  
+     document.write("</br>Apos excluir o elemento: </br></br>");
+     for(j=0; j<Cidades.length; j++){
+        document.write(Cidades[j] + "</br>");
+     }
+   </script>
+   
+   <h6>script 8</h6>
+   <script
+     var Cidades=["Ceara", "Sao Paulo", "Piaui", "Recife", "Aracaju"];
+     for(x=0; x<Cidades.length; x++){
+        document.write(Cidades[x] + "</br>");
+     }
+     <!-- add as cidades na posicao desejada, no caso, a partir da primeira posicao -->
+     Cidades.splice(1,0,"Manaus", "Londrina");
+        
+     document.write("<br>Apos add os elementos: </br>"); 
+     for(x=0; x<Cidades.length; x++){
+        document.write(Cidades[x] + "</br>");
+     }
+   </script>
+        <button id="btn" onclick="click()">Mostrar</button><br/><br/>
+        <output id="saida">00</output>
+   <script>
+     function click(){
+     let m=document.write("Hello world");
+     document.getElementById("saida").innerHTML=" " + m;
+     }
+   </script>
+</body>
+</html>

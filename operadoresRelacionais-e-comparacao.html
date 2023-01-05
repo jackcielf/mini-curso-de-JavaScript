@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+						<meta charset="UTF-8">
+						<title>Operadores</title>
+						<style>
+						  body {
+												  font-size: 0.8em;
+						   }
+						  table {
+						  						border-collapse: collapse;
+						  						width: 100%;
+						  						font-family: helvetica, arial, serif;
+						  						color: black;
+						  						margin: auto;
+						  						text-align: center;
+						  						font-size: 1.1em;
+						  						margin-bottom: 30px;
+						  }
+						  td ,th {
+						  						border: solid 2px black;
+						  }
+						  }
+						  tr {
+						  						border: solid 2px black;
+						  }
+						</style>
+</head>
+<body>
+						<h1>OPERADORES RELACIONAIS E DE COMPARACAO</h1>
+						
+						<table>
+												<tr>
+																		<th>OPERADORES</th> <th>USADO PARA</th> <th>SIGNIFICADO</th>
+												</tr>
+												<tr>
+																		<td><strong>==</strong></td> <td>Igualdade</td> <td>Nao leva em conta os tipos de dados (somente valores)</td> 
+												</tr>
+												<tr>
+																		<td><strong>===</strong></td> <td>Identidade</td> <td>E como o operador de igualdade, porem leva em conta dos tipos de dados (sem conversao de tipo)</td>
+												</tr>
+												<tr>
+																		<td><strong>!=</strong></td> <td>Diferente</td>		<td>Nao leva em  conta os tipos de dados</td>				
+												</tr>
+												<tr>
+																		<td><strong>!==</strong></td> <td>Nao identidade</td> <td>E como o operador de diferenca porem leva em conta os tipos de dados (sem conversao de tipos)</td>						
+												</tr>
+												<tr>
+																		<td><strong>></strong></td> <td>Maior que</td> <td>Nao leva em  conta os tipos de dados</td>
+												</tr>
+												<tr>
+																		<td><strong><</strong></td> <td>Menor que</td>	<td>Null</td>					
+												</tr>
+												<tr>
+																		<td><strong>>=</strong></td> <td>Maior ou igual a</td> <td>Null</td>
+												</tr>
+												<tr>
+																		<td><strong><=</strong></td> <td>Menor igual a</td> <td>Null</td>
+												</tr>
+						</table>
+
+						<script>
+						  let logico=true;
+											let num=10;
+											let texto="10";
+						  document.write(logico + "<br/>");
+											logico=num==texto;
+						  document.write("10 == \"10\" " + logico + "<br/>");
+											logico=num===texto;
+											document.write("10 === \"10\" " + logico + "<br/>");
+											logico=num!=texto;
+											document.write("10 != \"10\" " + logico + "<br/>");
+											logico=num!==texto;
+											document.write("10 !== \"10\" " + logico + "<br/>");
+											logico=num>texto;
+											document.write("10 > \"10\" " + logico + "<br/>");
+											logico=num>=texto;
+											document.write("10 >= \"10\" " + logico + "<br/>");
+						</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+						<meta charset="UTF-8">
+						<title>While</title>
+						<style>
+						  body {
+						  						font-size: 0.8em;
+						  }
+						</style>
+</head>
+<body>
+						<h1>ESTRUTURA DE REPETICAO WHILE</h1>
+  
+  <script>
+	    let num;
+	    let contador=0;
+	    num=prompt("Digite um numero qualquer entre 10 e 100");
+    
+	    if((num<10) || (num>100)){
+	    	  alert("Valor fora do intervalo especificado");
+	    }
+	    	else{
+	    		  while(contador<=num){
+	    		  	  document.write(contador + "<br/>");
+	    		  	  contador++;
+	    		  }
+	    	}
+  </script>
+</body>
+</html>

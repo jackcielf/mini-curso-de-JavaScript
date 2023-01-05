@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Arrays three</title>
+</head>
+<body>
+   <h1>ORDENACAO DE ARRAYS</h1>
+   
+   <h6>script 1: ordem alfabetica</h6>
+   <script>
+     let Cidades=["Sao Paulo", "Recife", "Vitoria", "Aracaju", "Belem"];
+     <!-- Colocando os elementos em ordem ALFABETICA -->
+     Cidades.sort();
+     for(i=0; i<Cidades.length; i++){
+        document.write(Cidades[i] + "</br>");
+     }
+   </script>
+        
+   <h6>script 2: ordem numerica</h6> 
+   <script>
+     let Valores=[12, 34, 45, 32, 67, 98, 1, 5];
+     function ordenaNum(a, b){
+        return a-b; <!-- return a>b?1:a<b?-1:0; --> 
+     }
+     Valores.sort(ordenaNum);
+     for(i=0; i<Valores.length; i++){
+        document.write(Valores[i] + "</br>");
+     }
+   </script>
+</body>
+</html>

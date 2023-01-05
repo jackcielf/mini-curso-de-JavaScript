@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+						<meta charset="UTF-8">
+						<title>Operadores Logicos</title>
+						<style>
+						  table {
+						  						border-collapse: collapse;
+						  						width: 400px;
+						  						font-family: helvetica, arial, serif;
+						  						font-size: 0.9em;
+						  						margin-bottom: 30px;
+						  }
+						  th {
+						  						background-color: grey;
+						  						border: solid 2px black;
+						  }
+						  td {
+						  						border: solid 2px black;
+						  						
+						  }
+						  tr {
+						  						border: solid 2px black;
+						  }
+						  p {
+						  						font-weight: bold;
+						  						color: red;
+						  }
+						</style>
+</head>
+<body>
+						<h1>OPERADORES LOGICOS</h1>
+						<h3>Operador END (&&)</h3>
+						<p>So retorna verdadeiro se ambos os operadores forem verdadeiros</p>
+						<table>
+												<tr>
+																		<th>Operando 1</th> <th>Operando 2</th> <th>Resultado</th>						
+												</tr>						
+												<tr>
+																		<td>false</td>	<td>false</td> <td>false</td>					
+												</tr>
+												<tr>
+																		<td>false</td> <td>true</td> <td>false</td>
+												</tr>
+												<tr>
+																		<td>true</td> <td>false</td> <td>false</td>
+												</tr>
+												<tr>
+																		<td>true</td>	<td>true</td> <td>true</td>					
+												</tr>
+						</table>
+						
+						<script>
+						  let log;
+						  let v1=25;
+						  let v2=30;
+						  log=(v1!=v2) && (v1<v2);
+						  document.write(log + "<br/>");
+						  document.write("Alterando v1: ");
+						  v1=30;
+						  log=(v1!=v2) && (v1<v2);
+						  document.write(log + "<br/>");
+						</script>
+						
+						<h3>Operador OR (||)</h3>
+						<p>So returna falso se ambos os operadores forem falsos</p>
+						<table>
+												<tr>
+																		<th>Operando 1</th>		<th>Operando 2</th> <th>Resultado</th>				
+												</tr>
+												<tr>
+																		<td>false</td> <td>false</td> <td>false</td>						
+												</tr>						
+												<tr>
+																		<td>false</td> <td>true</td> <td>true</td>						
+												</tr>
+												<tr>
+																		<td>true</td>	<td>false</td>	<td>true</td>				
+												</tr>
+												<tr>
+																		<td>true</td> <td>true</td> <td>true</td>						
+												</tr>
+						</table>
+						
+						<script>
+						  let logico;
+						  let num1=25;
+						  let num2=30;
+						  logico=(num1!=num2) || (num1>num2);
+						  document.write(logico + "<br/>");
+						  document.write("Alterando num1: ");
+						  num1=30;
+						  logico=(num1!=num2) || (num1>num2);
+						  document.write(logico + "<br/>");
+						</script>
+						
+						<h3>Operador NOT (!)</h3>
+						<p>Esse operador inverte o valor booleano (age apenas sobre o valor logico)</p>
+						<table>
+												<tr>
+																		<th>Operando</th> <th>Resultado</th>						
+												</tr>						
+												<tr>
+																		<td>false</td> <td>true</td>						
+												</tr>
+												<tr>
+																		<td>true</td> <td>false</td>
+												</tr>
+						</table>
+						
+						<script>
+						  let logic;
+						  let n1=25;
+						  let n2=30;
+						  logic=!(n1!=n2); 
+						  document.write(logic + "<br/>");
+						  logic=!(n1==n2);
+						  document.write(logic + "<br/>");
+						</script>
+</body>
+</html>
