@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  <h3 id="titulo">Este texto tem importancia</h3>
+  
+  <div class="noticia">
+    <h1>Titulo da noticia <strong>um</strong></h1>
+    <p>Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.</p>
+  </div>
+  
+  <div>
+    <h1>Titulo da noticia 2</h1>
+    <p>Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.</p>
+  </div>
+  
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOW24shMdW9xaOIdhG0EvimgxDHXBRmvpVABg
+  0fgtxVo1ZJ-DOyHxgZwA&s=10" alt="Noticias" id="noticias" onclick="executar()">
+  
+  <script>
+    
+    // USANDO FUNCOES E EVENTOS PARA ALTERAR O CONTEUDO
+    
+    function executar () {
+      let e = document.querySelector('#titulo');
+      e.innerText = "Novo titulo";
+      e.style.color = "blue";
+      e.style.width = "100%";
+      e.style.background = "#000";
+      e.style.textAlign = "center";
+    }
+    
+    
+    
+    
+  </script>
+</body>
+</html>

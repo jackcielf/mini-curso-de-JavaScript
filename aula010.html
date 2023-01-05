@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style>
+    .caixa {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 50px auto;
+      width: 400px;
+      padding: 20px;
+      border: 1px solid rgb(255, 0, 0);
+      text-align: center
+    }
+    .alerta {
+      padding: 5px;
+      text-align: center;
+      background: rgb(255, 0, 0);
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+  
+</head>
+<body>
+  
+  <div class="caixa">
+    <p>Nesta div apenas existe um paragrafo</p>
+  </div>
+  
+  <button onclick="executar()">Clicar</button>
+  
+  <script>
+    
+    /*
+    OBJETIVO: Mostra um alerte personalizado assim que um erro acontecer
+    */
+    
+    // Criando um novo elemento
+    let novo_elemento = document.createElement('p'); // Tag do novo elemento
+    novo_elemento.className = "alerta"; // Nome da class do novo elemento
+    novo_elemento.innerText = "Esta eh uma mensagem do alerta!"; // Conteudo da nova tag
+    
+    // Adicionando o novo elemento a uma div existente
+    let elemento = document.querySelector('.caixa');
+    elemento.appendChild(novo_elemento);
+    elemento.appendChild(novo_elemento); // Isso NAO vai criar um novo alerta, deve-se clona-los
+    elemento.appendChild(novo_elemento.cloneNode(true)); // Faz clones do novo elemento
+    elemento.appendChild(novo_elemento.cloneNode(true));
+    
+    function executar() {
+      
+    }
+    
+  </script>
+  
+</body>
+</html>

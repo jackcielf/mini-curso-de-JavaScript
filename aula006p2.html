@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+  <h3 id="titulo">Este texo tem <i><u>importancia</u></i></h3>
+  
+  <div class="noticia">
+    <h1>Titulo da noticia <strong>um</strong></h1>
+    <p>Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.</p>
+  </div>
+  
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOW24shMdW9xaOIdhG0EvimgxDHXBRmvpVABg
+  0fgtxVo1ZJ-DOyHxgZwA&s=10" alt="Noticias" id="noticias">
+  
+  <script>
+  /*
+    // o 'query selector all' seleciona todos os elementos
+    let elemento = document.querySelectorAll("div");
+    console.log(elemento);
+  */
+  
+  /*
+    // SELECIONANDO UMA TAG DENTRO DE OUTRA COM O QUERY SELECTOR
+    let elemento = document.querySelector("#titulo i u");
+    // console.log(elemento);
+    elemento.style.color = "#100fff"; // Mudando a cor do elemento selecionado no query selector
+    elemento.style.backgroundColor = "red"; // Mudando o fundo do elemento selecionado no query selector
+  */
+  
+    let elemento = document.querySelector(".noticia h1");
+    // MOSTRA TODA A TAG DO ELEMENTO
+    console.log(elemento.outerHTML);
+    // MOSTRA O QUE ESSE ELEMENTO CONTEM DENTRO DELE, ATE MESMO AS TAGS
+    console.log(elemento.innerHTML);
+    // MOSTRA O QUE ESSE ELEMENTO CONTEM DENTRO DELE, MENOS AS TAGS
+    console.log(elemento.innerText);
+  
+    // innerText muda o texto, porem nao aceita a inclusao de tags a partir dela
+    elemento.innerText = "<u>Novo texto</ul>";
+    // innerHTML muda o texto e aceita a inclusao de tags
+    elemento.innerHTML = "<u>Novo texto</ul>";
+    console.log(elemento.outerHTML);
+    // ELEMENTO eh um conjunto de tags
+    // innerHTML
+    // outerHTML
+    // innerText
+    
+    // atributos
+    // operacoes no console
+  </script>
+</body>
+</html>

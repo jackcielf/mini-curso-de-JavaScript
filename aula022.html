@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eventos</title>
+</head>
+<body>
+  
+  <h1>Titulo 1</h1>
+  <button>Fundo Amarelo</button>
+  
+  <script>
+  
+    // Selecionando um elemento para alterar outro a partir de uma condicao (SIMPLES)
+      document.querySelector('button').onclick = (e) => {
+      let elemento = document.querySelector('h1');
+      
+      if(elemento.style.backgroundColor == "") {
+        elemento.style.backgroundColor = "yellow";
+        e.target.textContent = "Fundo Transparente"; // Muda o texto do botao, identificado como 'e'
+      } else {
+        elemento.style.backgroundColor = "";
+        e.target.textContent = "Fundo Amarelo";
+      }
+    }
+  </script>
+  
+</body>
+</html>

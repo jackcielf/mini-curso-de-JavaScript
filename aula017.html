@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style>
+    div {
+      width: 300px;
+      height: 200px;
+      padding: 20px;
+      margin: 50px auto;
+      background: lightblue;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.
+  </div>
+  
+  <p id="propriedades"></p>
+  <button onclick="buscar_propriedades()">Executar</button>
+  
+  <script>
+    
+    function buscar_propriedades() {
+      let div = document.querySelector('div')
+      let p = document.querySelector('#propriedades');
+      
+      let resultados = "";
+      resultados += "offsetLeft = " + div.offsetTop + " ";
+      resultados += "offsetTop = " + div.offsetRight + " ";
+      resultados += "offsetWidth = " + div.offsetWidth + " ";
+      resultados += "offsetHeight = " + div.offsetHeight + " ";
+      
+      resultados += "scrollTop = " + div.scrollTop + " ";
+      resultados += "scrollHeight = " + div.scrollHeight + " ";
+      
+      p.textContent = resultados;
+    }
+    
+    
+  </script>
+</body>
+</html>

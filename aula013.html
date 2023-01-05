@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style>
+    .container {
+      border: 1px solid lightgray;
+      padding: 20px;
+      margin: 20px;
+    }
+    
+    </style>
+</head>
+<body>
+  <div id="container" class="container">
+    <p>Paragrafo dentro do div</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul> 
+  </div>
+  
+  <script>
+    
+    /*
+    IMPORTANTE:
+      Quando o 'cloneNode' eh true, ele copia o elemento e tudo que esta dentro dele, porem quando eh false, ele copiara somente a tag 
+    */
+    
+    /*
+    // CLONANDO UMA TAG JA EXISTENTE
+    let div2 = document.querySelector('#container').cloneNode(false);
+    document.querySelector('#container').after(div2);
+    */
+    
+    /*
+    // Remover elementos
+    document.querySelector('#container').remove();
+    */
+    
+    // document.querySelector('#container p').remove();
+    
+    /*
+    // Removendo com 'query selector all'
+    // document.querySelectorAll('#container ul li')[1].remove();
+    */
+    
+    /*
+    // Removendo com 'query selector'. Tambem pode usar o 'first-child'
+    document.querySelector('#container ul li:last-child').remove();
+    */
+    
+  </script>
+    
+  
+  
+</body>
+</html>

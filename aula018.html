@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style>
+    .container {
+      border: 1px solid lightgray;
+      padding: 20px;
+      margin: 20px;
+    }
+    p {
+      background: red;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    Hello World!
+  </div>
+  
+  <script>
+    
+    let div = document.querySelector('.container');
+    let input = document.createElement('input');
+    input.style.backgroundColor = "#000";
+    input.style.color = "#fff";
+    input.style.padding = "2%";
+    input.style.border = "none";
+    input.style.borderRadius = "10px";
+    let p = document.createElement('p');
+    
+    
+    p.innerText = "Criando uma tag p";
+    console.log(div.after(input));
+    console.log(div.appendChild(p));
+    
+  </script>
+</body>
+</html>

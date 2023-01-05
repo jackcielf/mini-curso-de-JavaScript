@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style>
+    h1 {
+      color: #ff100f;
+      margin-top: 50px;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps</h1>
+  
+  <p style="color: blue; margin-top: 20px;">Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps</p>
+  
+  <script>
+    
+    let p = document.querySelector('p');
+    console.log(p.style.color); // MOSTRA QUAL A COR DO ELEMENTO (SOMENTE COM CSS INLINE)
+    console.log(p.style.marginTop); // MOSTRA A MARGEM DO ELEMENTO (SOMENTE COM CSS INLINE)
+    
+    let h1 = document.querySelector('h1');
+    console.log(h1.style.color); // NAO FUNCIONA (CSS ESTA UM UMATAG 'STYLE')
+    
+    // Mostra o CSS do elemento mesmo que ele esteja dentro de uma tag 'style'
+    let propriedade = getComputedStyle(document.querySelector('h1')); 
+    console.log(propriedade.color);
+    console.log(propriedade.marginTop);
+    console.log(propriedade.borderColor);
+    console.log(propriedade.borderWidth);
+    
+  </script>
+</body>
+</html>

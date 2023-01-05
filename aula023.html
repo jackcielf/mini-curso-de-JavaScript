@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eventos do Mouse</title>
+  
+  <style>
+    div {
+      background: limegreen;
+      padding: 5%;
+    }
+  </style>
+  
+</head>
+<body>
+  
+  <div>
+    Este eh o meu elemento
+  </div>
+  
+  <script>
+    // SO REALIZA O PROCESSO APOS O BOTAO DO MOUSE SER CLICADO (Apertado e soltado)
+    document.querySelector('div').addEventListener('click', () => { console.log("click") });
+    
+    // FAZ O PROCESSO A PARTIR DO CLICK DO MOUSE (Apertado, NAO precisa necessariamente soltar)
+    document.querySelector('div').addEventListener('mousedown', () => { console.log("mouse down") });
+    
+    // EH O MESMO DO CLICK, POREM FEITO COM MAIS RAPIDEZ
+    document.querySelector('div').addEventListener('mouseup', () => { console.log("mouse up") });
+    
+    // REALIZA O PROCESSO ASSIM QUE O MOUSE PASSA EM CIMA DO ELEMENTO SELECIONADO
+    document.querySelector('div').addEventListener('mouseenter', () => { console.log("mouse enter") });
+    
+    // ACONTECE APOS O MOUSE SAIR DE CIMA DO ELEMENTO SELECIONADO
+    document.querySelector('div').addEventListener('mouseleave', () => { console.log("mouse leave") });
+    
+    // FAZ O PROCESSO ENQUANTO O MOUSE ESTA EM CIMA DO ELEMENTO
+    document.querySelector('div').addEventListener('mousemove', () => { console.log("mouse move") });
+    
+    // FAZ O PROCESSO APOS O DUPLO CLICK DO ELEMENTO
+    document.querySelector('div').addEventListener('dblclick', () => { console.log("dblclick") });
+    
+    // FAZ O PROCESSO AO APERTAR COM O BOTAO DIREITO DO MOUSE
+    document.querySelector('div').addEventListener('contextmenu', () => { console.log("context menu") });
+    
+  </script>
+  
+</body>
+</html>

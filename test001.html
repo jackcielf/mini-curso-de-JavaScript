@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teste eventos</title>
+  
+</head>
+<body>
+  
+  <div>
+    <h1>ESSE EH O MEU ELEMENTO</h1>
+  </div>
+  
+  <button>Mudar cor</button>
+  
+  <script>
+    
+    document.querySelector('button').onclick = (e) => {
+      let h1 = document.querySelector('h1');
+      
+      if (h1.style.backgroundColor == "") {
+        h1.style.backgroundColor = "green";
+        h1.style.transition = "1s";
+        h1.style.fontSize = "2em";
+        h1.style.textAlign = "center      `";
+        e.target.textContent = "Mudar fundo para transparente";
+        console.log("Mudando fundo para VERDE");
+      }
+      else {
+        h1.style.backgroundColor = "";
+        e.target.textContent = "Mudar fundo para verde";
+        console.log("Tirando cor fundo");
+      }
+    };
+    
+  </script>
+  
+</body>
+</html>

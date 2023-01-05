@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eventos | REMOVE end ADD</title>
+</head>
+<body>
+  <h1 id="titulo_1">Titulo 1</h1>
+  <h1 id="titulo_2">Titulo 2</h1>
+  
+  <button id="adicionar">Adicionar Eventos</button>
+  <button id="botao">Executar Eventos</button>
+  <button id="remover">Remover Eventos</button>
+  
+  <script>
+    document.querySelector("#adicionar").addEventListener('click', adicionar_eventos);
+    document.querySelector('#remover').addEventListener('click', remover_eventos);
+    
+    // ADICIONANDO EVENTOS A FUNCOES
+    function adicionar_eventos() {
+      let e = document.querySelector('#botao');
+      e.addEventListener('click', executar_1);
+      e.addEventListener('click', executar_2);
+    }
+    
+    function executar_1() {
+      let now = new Date();
+      document.querySelector('#titulo_1').textContent = now.getSeconds();
+    }
+    
+    function executar_2() {
+      let now = new Date();
+      document.querySelector('#titulo_2').textContent = now.getSeconds();
+    }
+    
+    // REMOVE O EVENTO APERTAR O BOTAO
+    function remover_eventos() {
+      document.querySelector('#botao').removeEventListener('click', executar_2);
+    }
+    
+
+  </script>
+</body>
+</html>

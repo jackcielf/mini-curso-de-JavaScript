@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  
+  <style>
+    .noticia {
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid rgba(0, 0, 0, .5);
+      background-color: rgba(240, 240, 240, .5);
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, .5);
+      padding: 20px;
+      margin: 50px;
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="noticia">
+    <h1>Titulo da noticia</h1>
+    <h3 id="sumario">Sumario da noticia</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tb:ANd9GcSOW24shMdW9xaOIdhG0EvimgxDHXBRmv
+    pVABg0fgtxVo1ZJ-DOyHxgZwA&s=10" alt="">
+    <p>Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.</p>
+  </div>
+  
+  <script>
+    
+    let elemento = document.querySelector('h3');
+    
+    // hasAttribute | Nesse caso verifica se 'elemento' eh um id ou nao
+    if(elemento.hasAttribute('id')) {
+      console.log('SIM');
+    }
+    
+    // getAttribute
+    console.log(elemento.getAttribute('id'));
+    
+    // setAttribute
+    elemento.setAttribute('title', 'Titulo do sumario'); // Mostra uma caixa ao passar o mause
+    
+    // removeAttribute
+    let imagem = document.querySelector('img');
+    // imagem.removeAttribute('src'); // Remove a imagem
+    
+    // Attributes
+    console.log(imagem.attributes['alt']);
+    
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <p>Conteudo da pagina</p>
+  <script>
+    /*
+      <html> corresponde a document.documentElement
+      <head> corresponde a document.head
+      <body> corresponde a document.body
+    */
+  </script>
+  
+  <script>
+    console.log(document.body.childNodes);
+    
+    // ALTERANDO UM TEXTO DO HTML
+    document.body.childNodes[1].innerText = "Novo texto do paragrafo"; 
+    
+    // ALTERANDO DINOVO TEXTO DO HTML, [1] NUMERO DO ELEMENTO
+    document.body.childNodes[1].textContent = "Novo texto do paragrafo 2";
+    
+    // MOSTRA A LINGUAGEM DA PAGINA
+    console.log(document.documentElement.lang);
+    
+  </script>
+</body>

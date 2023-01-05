@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style>
+    .p-1 {
+      background: yellow;
+      color: #000;
+      padding: 10px;
+      border: 1px solid #ff100f;
+    }
+  </style>
+</head>
+<body>
+  
+  <p class="p-1">Visual Studio Code comes with Emmet preinstalled emmet is a plugin.</p>
+  
+  <script>
+    
+    let p = document.querySelector('p');
+    p.style.backgroundColor = "green"; // Define o fundo do elemento
+    // p.style.border = "10px solid red";
+    p.style.borderWidth = "10px"; // Define a espessura da borda
+    p.style.borderStyle = "dashed"; // Define o tipo de borda
+    
+    // Essa propriedade eh como o CSS padrao
+    p.style.cssText = "background-color: blue; color: white; border: 5px solid red";
+    
+  </script>
+</body>
+</html>

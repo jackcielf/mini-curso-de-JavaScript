@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  
+  <style>
+    .p-1 {
+      background: yellow;
+    }
+    .p-2 {
+      background: green;
+    }
+    .espaco {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <p class="aaa">Visual Studio Code comes with Emmet preinstalled. Emmet is a plugin that helps you write HTML and CSS easier using shortcuts.</p>
+  
+  <script>
+    
+    let p = document.querySelector('p');
+    
+    // p.className = "p-2"; // ALTERANDO
+    // className permite ler e alterar a class de qualquer elemento
+    // console.log(p.className); //LENDO
+    
+    p.classList.add('p-2');  // Adiciona uma class para o elemento selecionado 
+    p.classList.add('espaco'); 
+    p.classList.remove('espaco'); // Remove a class do elemento selecionado
+    
+    // VERIFICANDO SE O ELEMENTO ESTA COM UMA DETERMINADA CLASS
+    if(p.classList.contains('espaco')) {
+      console.log('Tem espaco');
+    } else {
+      console.log('Nao tem espaco');
+    }
+    
+    
+    
+    
+  </script>
+  
+</body>
+</html>
